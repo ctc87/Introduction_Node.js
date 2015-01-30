@@ -22,7 +22,12 @@ act as a Web server without software such as Apache HTTP Server or IIS
 ##Instalation
 1-First run  http://nodejs.org/  
 2-Push install:  
-imagen install  
+![Imagen 1][1] 
+
+ [1]: img/install.png "Install icon"
+ [2]: img/hello.png "example1"  
+ [3]: img/echopetition.png "example2"
+ 
 3-When the file is downloaded open shell and put the following commands:  
   To decompress:  
       `$ tar xzvf node-v0.10.36.tar.gz`  
@@ -46,6 +51,10 @@ http.createServer(function (req, res) {
 }).listen(1337, '127.0.0.1');  
 console.log('Server running at http://127.0.0.1:1337/');  
 ```
+
+Then you can see in http://127.0.0.1:1337/
+![Imagen 2][2] 
+
 To run the server, put the code into a file example.js and execute it with the node program from the command line:  
 
 `$ node example.js`  
@@ -67,6 +76,9 @@ And write:
 
 >server.listen(1337, '127.0.0.1');
 ```  
+
+Then you can see the petition of the browser, in http://127.0.0.1:1337/
+![Imagen 3][3] 
 you can change server configuration inline with command node. This produces a  
 loop where the code are written and executed in real time.
 
