@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Introduction node.js : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Introduction node.js</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ctc87/Introduction_Node.js">View on GitHub</a>
+
+          <h1 id="project_title">Introduction node.js</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ctc87/Introduction_Node.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ctc87/Introduction_Node.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Little tutorial to install and example of use node.js based on the tutorial of the officia page(see fonts section)</p>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Node.js is an open source, cross-platform runtime environment for server-side and networking
+applications. Node.js applications are written in JavaScript, and can be run within the Node.js 
+runtime on OS X, Microsoft Windows, Linux, FreeBSD, and IBM i.</p>
+
+<p>Node.js provides an event-driven architecture and a non-blocking I/O API that optimizes an 
+application's throughput and scalability. These technologies are commonly used for real-time 
+web applications.</p>
+
+<p>Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic 
+modules are written in JavaScript. Node.js contains a built-in library to allow applications to 
+act as a Web server without software such as Apache HTTP Server or IIS</p>
+
+<h2>
+<a id="fonts" class="anchor" href="#fonts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fonts</h2>
+
+<ul>
+<li>Font <a href="http://es.wikipedia.org/wiki/Node.js">http://es.wikipedia.org/wiki/Node.js</a> (introduction)</li>
+<li>Font <a href="http://nodejs.org/">http://nodejs.org/</a> (examples)</li>
+<li>Font Manual node in command man. (develop tutorial)</li>
+</ul>
+
+<h2>
+<a id="instalation" class="anchor" href="#instalation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Instalation</h2>
+
+<p>1-First run  <a href="http://nodejs.org/">http://nodejs.org/</a><br>
+2-Push install:<br>
+<img src="https://github.com/ctc87/Introduction_Node.js/blob/master/img/hello.png" alt="Imagen 1" title="Install icon"> </p>
+
+<p>3-When the file is downloaded open shell and put the following commands:<br>
+  To decompress:<br>
+      <code>$ tar xzvf node-v0.10.36.tar.gz</code><br>
+  To install:<br>
+      <code>$ cd node-v0.10.36</code><br>
+      <code>$ sudo make</code>
+      <code>$ sudo make install</code><br>
+      <code>$ sudo ./configure</code><br>
+  Delete temporary stuff:<br>
+      <code>$ cd ..</code> 
+      <code>$ rm -rf node-v0.10.36.tar.gz node-v0.10.36</code><br>
+We have now installed node.js</p>
+
+<h2>
+<a id="ejamples-of-use" class="anchor" href="#ejamples-of-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ejamples of use</h2>
+
+<p>This simple web server written in Node responds with "Hello World" for every request.  </p>
+
+<pre><code>var http = require('http');  
+http.createServer(function (req, res) {  
+  res.writeHead(200, {'Content-Type': 'text/plain'});  
+  res.end('Hello World\n');  
+}).listen(1337, '127.0.0.1');  
+console.log('Server running at http://127.0.0.1:1337/');  
+</code></pre>
+
+<p>To run the server, put the code into a file example.js and execute it with the node program from the command line.<br>
+<code>$ node example.js</code><br>
+Server running at <a href="http://127.0.0.1:1337/">http://127.0.0.1:1337/</a>  </p>
+
+<p>And you can see in <a href="http://127.0.0.1:1337/">http://127.0.0.1:1337/</a><br>
+<img src="https://github.com/ctc87/Introduction_Node.js/blob/master/img/hello.png" alt="Imagen 2" title="example1"></p>
+
+<p>Here is an example of a simple TCP server which listens on port 1337 and echoes whatever you send it:<br>
+<code>$ node</code></p>
+
+<p>And write:  </p>
+
+<pre><code>&gt;var net = require('net');
+
+&gt;var server = net.createServer(function (socket) {
+  socket.write('Echo server\r\n');
+  socket.pipe(socket);
+});
+
+&gt;server.listen(1337, '127.0.0.1');
+</code></pre>
+
+<p>Then you can see the petition of the browser, in <a href="http://127.0.0.1:1337/">http://127.0.0.1:1337/</a><br>
+<img src="https://github.com/ctc87/Introduction_Node.js/blob/master/img/echopetition.png" alt="Imagen 3" title="example2"><br>
+you can change server configuration inline with command node. This produces a<br>
+loop where the code are written and executed in real time.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Introduction node.js maintained by <a href="https://github.com/ctc87">ctc87</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
