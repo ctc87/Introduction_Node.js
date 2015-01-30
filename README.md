@@ -50,12 +50,10 @@ http.createServer(function (req, res) {
   res.end('Hello World\n');  
 }).listen(1337, '127.0.0.1');  
 console.log('Server running at http://127.0.0.1:1337/');  
-```
-
-Then you can see in http://127.0.0.1:1337/
-![Imagen 2][2] 
-
-To run the server, put the code into a file example.js and execute it with the node program from the command line:  
+```  
+To run the server, put the code into a file example.js and execute it with the node program from the command line: 
+Then you can see in http://127.0.0.1:1337/  
+![Imagen 2][2]   
 
 `$ node example.js`  
 Server running at http://127.0.0.1:1337/  
