@@ -1,18 +1,10 @@
 # Initial tasks in PL
 ## Tasks:
 All of these tasks are explained for use it in Ubuntu:
+
 1. Install git
 2. Introduction to node.js
 3. Install and use Pandoc
-
-
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
 
 ## One install git
 In ubuntu install git in very simple. Open your bash terminal and use package manager like this:
