@@ -6,7 +6,7 @@ All of these tasks are explained for use it in Ubuntu:
 2. Introduction to node.js
 3. Install and use Pandoc
 
-## One install git
+## 1 install git
 In ubuntu install git in very simple. Open your bash terminal and use package manager like this:
 
 `$ sudo apt-get install git` 
@@ -18,10 +18,10 @@ To ensure it is installed correctly,: write in your terminal:
 And you see something like this:
 ![Imagen 4][4] 
 
-# Introduction to node.js
+## 2 Introduction to node.js
 Little tutorial to install and example of use node.js based on the tutorial of the officia page(see fonts section)
 
-##Introduction
+###Introduction
 Node.js is an open source, cross-platform runtime environment for server-side and networking
 applications. Node.js applications are written in JavaScript, and can be run within the Node.js 
 runtime on OS X, Microsoft Windows, Linux, FreeBSD, and IBM i.
@@ -34,12 +34,8 @@ Node.js uses the Google V8 JavaScript engine to execute code, and a large percen
 modules are written in JavaScript. Node.js contains a built-in library to allow applications to 
 act as a Web server without software such as Apache HTTP Server or IIS
 
-##Fonts
-* Font http://es.wikipedia.org/wiki/Node.js (introduction)
-* Font http://nodejs.org/ (examples)
-* Font Manual node in command man. (develop tutorial)
 
-##Instalation
+###Instalation
 1-First run  http://nodejs.org/  
 2-Push install:  
 ![Imagen 1][1] 
@@ -63,7 +59,7 @@ act as a Web server without software such as Apache HTTP Server or IIS
       `$ rm -rf node-v0.10.36.tar.gz node-v0.10.36`  
 We have now installed node.js
 
-##Ejamples of use
+###Ejamples of use
 This simple web server written in Node responds with "Hello World" for every request.  
 ```
 var http = require('http');  
@@ -101,4 +97,17 @@ Then you can see the petition of the browser, in http://127.0.0.1:1337/
 you can change server configuration inline with command node. This produces a  
 loop where the code are written and executed in real time.
 
+##Fonts
 
+1. Git
+  * Font https://git-scm.com/book/en/v2/Getting-Started-Installing-Git (install)
+  * Font Manual git in command man. (usage)
+
+2. NodeJS
+  * Font http://es.wikipedia.org/wiki/Node.js (introduction)
+  * Font http://nodejs.org/ (examples)
+  * Font Manual node in command man. (develop tutorial)
+
+3. Pandoc
+  * Font http://pandoc.org/ (install)
+  * Font Manual Pandoc in command man. (usage)
