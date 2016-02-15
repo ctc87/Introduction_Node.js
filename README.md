@@ -1,3 +1,22 @@
+# Initial tasks in PL
+## Tasks:
+All of these tasks are explained for use it in Ubuntu
+1. Install git
+2. Introduction to node.js
+3. Install and use Pandoc
+
+## One install git
+In ubuntu install git in very simple. Open your bash terminal and use package manager like this:
+
+`$ sudo apt-get install git` 
+
+To ensure it is installed correctly,: write in your terminal:
+
+`$ git --help`
+
+And you see something like this:
+![Imagen 4][4] 
+
 # Introduction to node.js
 Little tutorial to install and example of use node.js based on the tutorial of the officia page(see fonts section)
 
@@ -27,6 +46,8 @@ act as a Web server without software such as Apache HTTP Server or IIS
  [1]: img/install.png "Install icon"
  [2]: img/hello.png "example1"  
  [3]: img/echopetition.png "example2"
+ [4]: img/git.png "gitHelp"
+ [5]: img/installingPandoc.png "installingPandoc"
  
 3-When the file is downloaded open shell and put the following commands:  
   To decompress:  
